@@ -1,0 +1,17 @@
+<div class="main">
+    <div class='left-div'>file info</div>
+    <div class="info-div">
+        {{#if id }}
+            <div>
+                <h1 class='properties'>id:<span>{{id}}</span></h1>
+                <h1 class='properties'>name:<span>{{name}}</span></h1>
+                <h1 class='properties'>path:<span>{{path}}</span></h1>
+                <h1 class='properties'>size:<span>{{size}}</span></h1>
+                <h1 class='properties'>type:<span>{{type}}</span></h1>
+                <h1 class='properties'>savedate:<span>{{savedate}}</span></h1>
+            </div>
+        {{else}}
+            <div class='home-div inf'>Nie wybrano pliku</div>
+        {{/if}}
+    </div>
+</div>

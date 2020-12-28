@@ -1,0 +1,13 @@
+{{#each uploaded}}
+<tr>
+    <td>{{id}}</td>
+    <td><img style="width:40px;" src="/icons/{{ext}}.png" onerror="src='/icons/unk.png'" /></td>
+    <td>{{name}}</td>
+    <td>{{size}}</td>
+    <td>{{type}}</td>
+    <td><a href='/delete/{{id}}'>delete</td>
+    <td><a href='/info/{{id}}'>info</td>
+    <td><a href='/download/{{id}}'>download</td>
+</tr>
+
+{{/each}}
