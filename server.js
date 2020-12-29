@@ -63,8 +63,9 @@ app.post('/upload', function (req, res) {
             index++;
             console.log(context.uploaded)
         });
+        res.redirect('/filemanager')
     });
-    res.redirect('/filemanager')
+    
 });
 function extension(name){
     ext = name.split('.')[1]
